@@ -144,6 +144,11 @@ body {
 .home-link {
   font-size: 16px;
 }
+.home-link {
+  margin: 0;
+  padding: 0;
+}
+
 .sidenav a:hover,
 .home-link:hover,
 .dropdown-btn:hover {
@@ -237,6 +242,7 @@ input:before {
   background-color: #0095d3;
   padding: 10px 28px;
   transition: 0.5s;
+  cursor: pointer;
 }
 #send-countdown-btn:hover {
   background-color: #134c97;
@@ -244,7 +250,7 @@ input:before {
 
 #runpay {
   width: 680px;
-  height: 720px;
+  height: auto;
 }
 .download {
   position: relative;
@@ -300,6 +306,7 @@ input:before {
 .line-table-total .time-wasted {
   background: #0c1931;
   font-weight: 600;
+  margin-bottom: 23px;
 }
 #runpay .head-form {
   margin-bottom: 25px;
@@ -311,4 +318,18 @@ input:before {
 .time-wasted {
   float: left;
   width: 200px;
+}
+
+#rightAside {
+  position: absolute;
+  float: left;
+  padding-left: 315px;
+  padding-top: 76px;
+}
+
+.text {
+  display: inline-block;
+  margin-top: 32px;
+  margin-left: 32px;
+  font-size: 32px;
 }

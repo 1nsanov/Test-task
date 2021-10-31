@@ -13,3 +13,17 @@ for (i = 0; i < dropdown.length; i++) {
 	});
 }
 
+DisplayAllNone()
+document.getElementById('home').style.display = 'block'
+
+function Show(id, text) {
+	DisplayAllNone()
+	document.getElementById(id).style.display = 'block'
+	document.getElementById('text-header').innerHTML = text
+}
+
+function DisplayAllNone() {
+	document.getElementById('home').style.display = 'none'
+	document.getElementById('reportproject').style.display = 'none'
+	document.getElementById('reportworker').style.display = 'none'
+}
