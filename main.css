@@ -380,7 +380,7 @@ input:before {
   font-size: 32px;
 }
 
-@media (max-width: 856px) {
+@media (max-width: 860px) {
   #sidenav,
   #leftAside {
     display: none;

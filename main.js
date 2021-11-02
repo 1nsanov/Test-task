@@ -46,3 +46,13 @@ document.getElementById('nav-btn').addEventListener('click', function () {
 		console.log(1)
 	}
 })
+
+
+ChangeDisplayView();
+window.addEventListener('resize', ChangeDisplayView);
+function ChangeDisplayView() {
+	if (document.querySelector('#sidenav').style.display === 'none') {
+		document.querySelector('#sidenav').style.display = 'block'
+		document.querySelector('#leftAside').style.display = 'block'
+	}
+}
