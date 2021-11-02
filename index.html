@@ -11,199 +11,203 @@
 </head>
 
 <body>
-	<div id="header">
-		<span id="logo"><img id="img-logo" src="./image/logo.png" alt="" /></span>
-		<span id="text-header"></span>
+	<div class="wrapper">
+		<div id="header">
+			<span id="nav-btn"><i class="fas fa-bars"></i></span>
+			<span id="logo"><img id="img-logo" src="./image/logo.png" alt="" /></span>
+			<span id="text-header"></span>
 
-		<span id="profile">
-			<img id="img-profile" src="./image/OldBluePH.jpg" alt="">
-			<div id="user">1nsanov<br>
-				<a id="enter" href="#">выйти</a>
+			<span id="profile">
+				<img id="img-profile" src="./image/OldBluePH.jpg" alt="">
+				<div id="user">1nsanov<br>
+					<a id="enter" href="#">выйти</a>
+				</div>
+			</span>
+
+			<div class="circle-icons"><i class="fas fa-envelope"></i>
+				<div class="red-point">3</div>
 			</div>
-		</span>
-
-		<div class="circle-icons"><i class="fas fa-envelope"></i>
-			<div class="red-point">3</div>
+			<div class="circle-icons"><i class="fas fa-bell"></i>
+				<div class="red-point">2</div>
+			</div>
 		</div>
-		<div class="circle-icons"><i class="fas fa-bell"></i>
-			<div class="red-point">2</div>
+
+		<div id="leftAside">
+			<div id="sidenav">
+				<a href="index.html"><button class="home-link"><i class="fas fa-home"></i> Главная</button></a>
+				<button class="dropdown-btn"><i class="fas fa-tasks"></i> Задачи</button>
+				<div class="dropdown-container">
+					<a href="#">Ссылка</a>
+				</div>
+
+				<button class="dropdown-btn"><i class="fas fa-running"></i> Спринты</button>
+				<div class="dropdown-container">
+					<a href="#">Ссылка</a>
+				</div>
+
+				<button class="dropdown-btn"><i class="fas fa-users"></i> Группы</button>
+				<div class="dropdown-container">
+					<a href="#">Ссылка</a>
+				</div>
+
+				<button class="dropdown-btn"><i class="fas fa-cog"></i> Настройки</button>
+				<div class="dropdown-container">
+					<a href="#">Ссылка</a>
+				</div>
+
+				<button class="dropdown-btn"><i class="fas fa-project-diagram"></i> Схема проекта</button>
+				<div class="dropdown-container">
+					<a href="#">Ссылка</a>
+				</div>
+
+				<button class="dropdown-btn"><i class="fas fa-atlas"></i> Wiki</button>
+				<div class="dropdown-container">
+					<a href="#">Ссылка</a>
+				</div>
+
+				<button class="dropdown-btn">
+					<i class="fas fa-chart-line"></i> Статистика
+				</button>
+				<div class="dropdown-container">
+					<a onclick="Show('reportworker', 'Отчет по сотруднику')" href="#reportworker">Отчет по сотруднику</a>
+					<a onclick="Show('reportproject', 'Отчет по проекту и сотрудникам')" href="#reportproject">Отчет по
+						проекту
+						и сотрудникам</a>
+					<a href="#">Отчет по проекту и заданиям</a>
+				</div>
+
+				<button class="dropdown-btn"><i class="fas fa-file"></i> Документы</button>
+				<div class="dropdown-container">
+					<a href="#">Ссылка</a>
+				</div>
+
+				<button class="dropdown-btn"><i class="fas fa-comments"></i> Обсуждения</button>
+				<div class="dropdown-container">
+					<a href="#">Ссылка</a>
+				</div>
+
+				<button class="dropdown-btn"><i class="fas fa-envelope"></i> Сообщения</button>
+				<div class="dropdown-container">
+					<a href="#">Ссылка</a>
+				</div>
+			</div>
+		</div>
+
+		<div id="rightAside">
+			<div id="home">
+				<span class="text">Главная</span>
+			</div>
+
+
+			<div id="reportproject">
+				<div id="settings-countdown">
+					<div class="head-form"><span>Настройки отсчета</span></div>
+					<div class="input-form"><span>Выберете проект</span><br>
+						<select name="" id="">
+							<option selected disabled>Название проекта</option>
+							<option>Проект 1</option>
+							<option>Проект 2</option>
+						</select>
+					</div>
+
+					<div class="input-form"><span>Начальная дата</span><br>
+						<input id="start-date" type="date">
+					</div>
+
+					<div class="input-form-end"><span>Конечная дата</span><br>
+						<input id="end-date" type="date">
+					</div>
+					<button id="send-countdown-btn">Показать отсчет</button>
+				</div>
+				<div id="runpay">
+					<div class="head-form">
+						<span>Runpay</span>
+						<span class="download"><i class="fas fa-download"></i> Скачать :</span>
+						<span><button class="type-file" id="dl-excel">Excel</button></span>
+						<span><button class="type-file" id="dl-pdf">PDF</button></span>
+					</div>
+					<div class="line-table-head">
+						<div class="name-worker">Имя сотрудника</div>
+						<div class="time-wasted">Затраченное время</div>
+					</div>
+
+					<div class="line-table-worker">
+						<div class="name-worker">Иванов Иван</div>
+						<div class="time-wasted">150.2</div>
+					</div>
+					<div class="line-table-worker">
+						<div class="name-worker">Иванов Иван</div>
+						<div class="time-wasted">150.2</div>
+					</div>
+					<div class="line-table-worker">
+						<div class="name-worker">Иванов Иван</div>
+						<div class="time-wasted">150.2</div>
+					</div>
+					<div class="line-table-worker">
+						<div class="name-worker">Иванов Иван</div>
+						<div class="time-wasted">150.2</div>
+					</div>
+					<div class="line-table-worker">
+						<div class="name-worker">Иванов Иван</div>
+						<div class="time-wasted">150.2</div>
+					</div>
+
+					<div class="line-table-total">
+						<div class="name-worker">Всего</div>
+						<div class="time-wasted">150.2</div>
+					</div>
+				</div>
+			</div>
+
+
+			<div id="reportworker">
+				<div id="settings-countdown">
+					<div class="head-form"><span>Настройки отсчета</span></div>
+					<div class="input-form"><span>Выберите сотрудника</span><br>
+						<select name="" id="">
+							<option selected disabled>Выберите сотрудника</option>
+							<option>Коваленко Сергей</option>
+							<option>Безунов Виктор</option>
+						</select>
+					</div>
+					<div class="input-form"><span>Начальная дата</span><br>
+						<input id="start-date" type="date">
+					</div>
+
+					<div class="input-form-end"><span>Конечная дата</span><br>
+						<input id="end-date" type="date">
+					</div>
+					<button id="send-countdown-btn">Показать отсчет</button>
+				</div>
+				<div id="runpay">
+					<div class="head-form">
+						<span>Runpay</span>
+						<span class="download"><i class="fas fa-download"></i> Скачать :</span>
+						<span><button class="type-file" id="dl-excel">Excel</button></span>
+						<span><button class="type-file" id="dl-pdf">PDF</button></span>
+					</div>
+					<div class="line-table-head">
+						<div class="name-worker">Проекты</div>
+						<div class="time-wasted">Затраченное время</div>
+					</div>
+
+					<div class="line-table-worker">
+						<div class="name-worker">RUNPAY</div>
+						<div class="time-wasted">1</div>
+					</div>
+					<div class="line-table-worker">
+						<div class="name-worker">evoshare</div>
+						<div class="time-wasted">34</div>
+					</div>
+
+					<div class="line-table-total">
+						<div class="name-worker">Всего</div>
+						<div class="time-wasted">35</div>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
-
-	<div id="leftAside">
-		<div class="sidenav">
-			<a href="index.html"><button class="home-link"><i class="fas fa-home"></i> Главная</button></a>
-			<button class="dropdown-btn"><i class="fas fa-tasks"></i> Задачи</button>
-			<div class="dropdown-container">
-				<a href="#">Ссылка</a>
-			</div>
-
-			<button class="dropdown-btn"><i class="fas fa-running"></i> Спринты</button>
-			<div class="dropdown-container">
-				<a href="#">Ссылка</a>
-			</div>
-
-			<button class="dropdown-btn"><i class="fas fa-users"></i> Группы</button>
-			<div class="dropdown-container">
-				<a href="#">Ссылка</a>
-			</div>
-
-			<button class="dropdown-btn"><i class="fas fa-cog"></i> Настройки</button>
-			<div class="dropdown-container">
-				<a href="#">Ссылка</a>
-			</div>
-
-			<button class="dropdown-btn"><i class="fas fa-project-diagram"></i> Схема проекта</button>
-			<div class="dropdown-container">
-				<a href="#">Ссылка</a>
-			</div>
-
-			<button class="dropdown-btn"><i class="fas fa-atlas"></i> Wiki</button>
-			<div class="dropdown-container">
-				<a href="#">Ссылка</a>
-			</div>
-
-			<button class="dropdown-btn">
-				<i class="fas fa-chart-line"></i> Статистика
-			</button>
-			<div class="dropdown-container">
-				<a onclick="Show('reportworker', 'Отчет по сотруднику')" href="#reportworker">Отчет по сотруднику</a>
-				<a onclick="Show('reportproject', 'Отчет по проекту и сотрудникам')" href="#reportproject">Отчет по проекту
-					и сотрудникам</a>
-				<a href="#">Отчет по проекту и заданиям</a>
-			</div>
-
-			<button class="dropdown-btn"><i class="fas fa-file"></i> Документы</button>
-			<div class="dropdown-container">
-				<a href="#">Ссылка</a>
-			</div>
-
-			<button class="dropdown-btn"><i class="fas fa-comments"></i> Обсуждения</button>
-			<div class="dropdown-container">
-				<a href="#">Ссылка</a>
-			</div>
-
-			<button class="dropdown-btn"><i class="fas fa-envelope"></i> Сообщения</button>
-			<div class="dropdown-container">
-				<a href="#">Ссылка</a>
-			</div>
-		</div>
-	</div>
-
-	<div id="home">
-		<span class="text">Главная</span>
-	</div>
-
-
-	<div id="reportproject">
-		<div id="settings-countdown">
-			<div class="head-form"><span>Настройки отсчета</span></div>
-			<div class="input-form"><span>Выберете проект</span><br>
-				<select name="" id="">
-					<option selected disabled>Название проекта</option>
-					<option>Проект 1</option>
-					<option>Проект 2</option>
-				</select>
-			</div>
-
-			<div class="input-form"><span>Начальная дата</span><br>
-				<input id="start-date" type="date">
-			</div>
-
-			<div class="input-form-end"><span>Конечная дата</span><br>
-				<input id="end-date" type="date">
-			</div>
-			<button id="send-countdown-btn">Показать отсчет</button>
-		</div>
-		<div id="runpay">
-			<div class="head-form">
-				<span>Runpay</span>
-				<span class="download"><i class="fas fa-download"></i> Скачать :</span>
-				<span><button class="type-file" id="dl-excel">Excel</button></span>
-				<span><button class="type-file" id="dl-pdf">PDF</button></span>
-			</div>
-			<div class="line-table-head">
-				<div class="name-worker">Имя сотрудника</div>
-				<div class="time-wasted">Затраченное время</div>
-			</div>
-
-			<div class="line-table-worker">
-				<div class="name-worker">Иванов Иван</div>
-				<div class="time-wasted">150.2</div>
-			</div>
-			<div class="line-table-worker">
-				<div class="name-worker">Иванов Иван</div>
-				<div class="time-wasted">150.2</div>
-			</div>
-			<div class="line-table-worker">
-				<div class="name-worker">Иванов Иван</div>
-				<div class="time-wasted">150.2</div>
-			</div>
-			<div class="line-table-worker">
-				<div class="name-worker">Иванов Иван</div>
-				<div class="time-wasted">150.2</div>
-			</div>
-			<div class="line-table-worker">
-				<div class="name-worker">Иванов Иван</div>
-				<div class="time-wasted">150.2</div>
-			</div>
-
-			<div class="line-table-total">
-				<div class="name-worker">Всего</div>
-				<div class="time-wasted">150.2</div>
-			</div>
-		</div>
-	</div>
-
-
-	<div id="reportworker">
-		<div id="settings-countdown">
-			<div class="head-form"><span>Настройки отсчета</span></div>
-			<div class="input-form"><span>Выберите сотрудника</span><br>
-				<select name="" id="">
-					<option selected disabled>Выберите сотрудника</option>
-					<option>Коваленко Сергей</option>
-					<option>Безунов Виктор</option>
-				</select>
-			</div>
-			<div class="input-form"><span>Начальная дата</span><br>
-				<input id="start-date" type="date">
-			</div>
-
-			<div class="input-form-end"><span>Конечная дата</span><br>
-				<input id="end-date" type="date">
-			</div>
-			<button id="send-countdown-btn">Показать отсчет</button>
-		</div>
-		<div id="runpay">
-			<div class="head-form">
-				<span>Runpay</span>
-				<span class="download"><i class="fas fa-download"></i> Скачать :</span>
-				<span><button class="type-file" id="dl-excel">Excel</button></span>
-				<span><button class="type-file" id="dl-pdf">PDF</button></span>
-			</div>
-			<div class="line-table-head">
-				<div class="name-worker">Проекты</div>
-				<div class="time-wasted">Затраченное время</div>
-			</div>
-
-			<div class="line-table-worker">
-				<div class="name-worker">RUNPAY</div>
-				<div class="time-wasted">1</div>
-			</div>
-			<div class="line-table-worker">
-				<div class="name-worker">evoshare</div>
-				<div class="time-wasted">34</div>
-			</div>
-
-			<div class="line-table-total">
-				<div class="name-worker">Всего</div>
-				<div class="time-wasted">35</div>
-			</div>
-		</div>
-	</div>
-
-
 
 	<script src="./main.js"></script>
 </body>
